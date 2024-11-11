@@ -1,6 +1,7 @@
 import flappy_bird_gymnasium
 import gymnasium
 env = gymnasium.make("FlappyBird-v0", render_mode="human", use_lidar=True)
+print(env.observation_space.shape)
 
 obs, _ = env.reset()
 while True:
