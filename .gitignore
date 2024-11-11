@@ -1,2 +1,3 @@
 flappy_env
 .venv
+trained_dqn_agent.pth

@@ -41,6 +41,7 @@ def train_dqn(episodes=50):
 
 
     env.close()
+    agent.save("trained_dqn_agent.pth")
 
 
 # def train_dqn(episodes=1000):
@@ -79,7 +80,7 @@ def train_dqn(episodes=50):
 
 if __name__ == "__main__":
     start_time = time.time()
-    train_dqn(60)
+    train_dqn(10)
     end_time = time.time()
     total_duration = end_time - start_time
     print(f"Training completed in {total_duration:.2f} seconds.")
